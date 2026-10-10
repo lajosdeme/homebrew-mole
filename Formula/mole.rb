@@ -5,13 +5,13 @@
 class Mole < Formula
   desc "Deep-research agent with an enforced budget and verified quotes"
   homepage "https://github.com/lajosdeme/mole"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lajosdeme/mole/releases/download/v0.1.0/mole_0.1.0_darwin_amd64.tar.gz"
-      sha256 "4bba3828da7de64aaea264e22e3ff26db46dccea361163b1b7c1a7140eaa5e6b"
+      url "https://github.com/lajosdeme/mole/releases/download/v0.2.0/mole_0.2.0_darwin_amd64.tar.gz"
+      sha256 "89773a7baf737b732bae9f65277aab8f13cbd38915dc52c2e1853a567e8bb6a6"
 
       define_method(:install) do
         bin.install "mole"
@@ -19,8 +19,8 @@ class Mole < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lajosdeme/mole/releases/download/v0.1.0/mole_0.1.0_darwin_arm64.tar.gz"
-      sha256 "6787f240a13bca38514c722898a60c7052ec4398343f908d41b361af28b86243"
+      url "https://github.com/lajosdeme/mole/releases/download/v0.2.0/mole_0.2.0_darwin_arm64.tar.gz"
+      sha256 "8d5f93a7abce5476d4967f1d45bf3b28f9bf63631415c142452c9f424ee197b1"
 
       define_method(:install) do
         bin.install "mole"
@@ -31,16 +31,16 @@ class Mole < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lajosdeme/mole/releases/download/v0.1.0/mole_0.1.0_linux_amd64.tar.gz"
-      sha256 "cf8000c742273830a156def416282b329ad5157a7339c7d387db5edf730f6e94"
+      url "https://github.com/lajosdeme/mole/releases/download/v0.2.0/mole_0.2.0_linux_amd64.tar.gz"
+      sha256 "fa7a406d448789adec845b786fde734f347d8c8e61cc97c133e248891bfca378"
       define_method(:install) do
         bin.install "mole"
         bin.install "mole-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lajosdeme/mole/releases/download/v0.1.0/mole_0.1.0_linux_arm64.tar.gz"
-      sha256 "88cbe3941e5a289a66ff94a873a8c8a9f61c47ec5d49bb182a941675a90b7484"
+      url "https://github.com/lajosdeme/mole/releases/download/v0.2.0/mole_0.2.0_linux_arm64.tar.gz"
+      sha256 "173150d0a8b1cefd2763cf0bed4c90c656a641d36f8f77c527fc2578cb6e28c6"
       define_method(:install) do
         bin.install "mole"
         bin.install "mole-mcp"
